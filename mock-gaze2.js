@@ -11,7 +11,7 @@ let log = console.log.bind(console)
 
 // 这里.表示当前目录，如需更改，请自行更换
 const watcher = chokidar.watch('.', {
-  ignored: ['./node_modules'], // ignore 
+  ignored: ['./node_modules','./.git'], // ignore 
   persistent: true
 }); 
 // 这里all表示所有事件都监听，如需更改其他的事件，参考连接：https://github.com/paulmillr/chokidar
