@@ -1,7 +1,8 @@
 [TOC]
 
 > 这个项目是为了前后端分离开发，使用`mock`+`nodejs`编写的模拟后端数据的服务，同时添加了同步上传到服务器上的功能
-github地址：[mock-server](https://github.com/LicaiMaker/mock-server.git)
+> github地址：[mock-server](https://github.com/LicaiMaker/mock-server.git)
+
 ### 目录简介
 
 ![目录结构](./目录结构.png)
@@ -50,6 +51,8 @@ function uploadFile(localPath,remotePath){
 
 - 启动监听
 
+  **进入到mock-server目录**：
+
 ```shell
 node mock-gaze2.js
 ```
@@ -63,6 +66,8 @@ node mock-gaze2.js
   虽然现在上传到了远端服务器，但是我们要的效果是，本地修改，同步到远端服务器，然后通过`ip`或域名可以访问远端的接口，所以需要在服务器上启动接口服务(即：在服务器上执行`node mock-start.js `)
 
   但是呢，现在没有上传`node_modules`文件夹，故需要在服务器上安装一下依赖库
+
+  **进入到mock-server目录**：
 
   ```
   npm install 
