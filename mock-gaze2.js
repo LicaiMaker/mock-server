@@ -24,7 +24,7 @@ watcher.on('all', (event, filePath) => {
 
 function uploadFile(localPath,remotePath){
 	// 这里的地址自行更改成自己的服务器
-	client.scp(localPath, 'username:password@ip_address:'+remotePath, function(err) {
+	client.scp(localPath, 'root:licaiMaker800@@81.68.100.80:'+remotePath, function(err) {
 		log(`${localPath} 上传成功..`) 
 })
 }
